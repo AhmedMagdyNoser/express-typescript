@@ -1,0 +1,23 @@
+{
+  "name": "express-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "start": "cross-env ENVIRONMENT=production node dist/index.js",
+    "dev": "cross-env ENVIRONMENT=development nodemon src/index.ts",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
