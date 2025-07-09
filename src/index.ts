@@ -1,12 +1,12 @@
-import loadEnvironmentVariables from "./utils/load-env-vars";
+import loadEnvironmentVariables from "@/utils/load-env-vars";
 
 loadEnvironmentVariables();
 
 import express from "express";
-import routes from "./routes";
-import logger from "./middlewares/logger";
-import globalErrorHandler from "./middlewares/error-handler";
-import { PORT, ENVIRONMENT } from "./utils/constants";
+import routes from "@/routes";
+import logger from "@/middlewares/logger";
+import globalErrorHandler from "@/middlewares/error-handler";
+import { PORT, ENVIRONMENT } from "@/utils/constants";
 
 // Create an Express app
 const app = express();

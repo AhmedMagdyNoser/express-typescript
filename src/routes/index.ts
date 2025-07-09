@@ -1,5 +1,5 @@
 import { Router } from "express";
-import ApiError from "../utils/classes/ApiError";
+import ApiError from "@/utils/classes/ApiError";
 import users from "./users";
 
 const router = Router();
